@@ -6,7 +6,7 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), "..", "lib")
 require "contributor_covenant"
 
 begin
-  warn "=> Generating release notes..."
+  warn "=> Generating contributor covenant..."
   ContributorCovenant.generate
   warn "=> Done!"
 rescue SignalException => e
