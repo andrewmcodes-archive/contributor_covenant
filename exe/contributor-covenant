@@ -5,10 +5,7 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), "..", "lib")
 
 require "contributor_covenant"
 
-template_file = "./CONTRIBUTOR_COVENANT.md"
-
 begin
-  require template_file
   warn "=> Generating release notes..."
   ContributorCovenant.generate
   warn "=> Done!"
